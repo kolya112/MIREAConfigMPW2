@@ -5,8 +5,6 @@ namespace MIREAConfigMPW2
 {
     internal class Program
     {
-        static HubManager iniManager = new HubManager(Directory.GetCurrentDirectory() + "\\config.ini");
-
         static void Main(string[] args)
         {
             if (!InitConfig())
@@ -25,7 +23,7 @@ namespace MIREAConfigMPW2
         /// <returns>true - если успешно, иначе false</returns>
         private static bool InitConfig()
         {
-            //var iniManager = new HubManager(Directory.GetCurrentDirectory() + "\\config.ini");
+            var iniManager = new HubManager(Directory.GetCurrentDirectory() + "\\config.ini");
 
             if (File.Exists(Directory.GetCurrentDirectory() + "\\config.ini"))
             {
