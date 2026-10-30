@@ -13,8 +13,7 @@
 
   <ItemGroup>
     <None Update="config.ini">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>config.Designer.cs</LastGenOutput>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
